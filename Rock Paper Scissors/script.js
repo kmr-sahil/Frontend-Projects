@@ -67,13 +67,16 @@ function showresult (score, playerChoice, computerChoice) {
     const playerScoreDiv = document.getElementById('player-score')
 
     if (score == -1) {
-        resultDiv.innerText = 'You Lose!'
+        resultDiv.style.boxShadow = "0 0 30px #E96479"
+        resultDiv.innerText = '- You Lose! -'
     }
     else if (score == 0) {
-        resultDiv.innerText = 'Its a tie!'
+        resultDiv.style.boxShadow = "0 0 30px #FCFFE7"
+        resultDiv.innerText = '- Its a tie! -'
     }
     else {
-        resultDiv.innerText = 'You won'
+        resultDiv.style.boxShadow = "0 0 30px #03C988"
+        resultDiv.innerText = '- You won -'
     }
 
     handsDiv.innerText = `👨 ${playerChoice} vs 🤖 ${computerChoice}`
@@ -92,6 +95,11 @@ function endgame(totalScore) {
     resultDiv.innerText = ''
     handsDiv.innerText = ''
     playerScoreDiv.innerText = ''
+}
+
+const darkBtn = document.getElementById('icon')
+darkBtn.onclick = () => {
+    document.body.classList.toggle("dark-theme")
 }
 
 
