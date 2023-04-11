@@ -136,73 +136,36 @@ a:hover {
 
 .cloud {
    position: absolute;
-   font-size: 20rem;
    color: var(--text-color);
-   transform: translateY(60vh);
+   font-size: 3rem;
+   font-size: 6rem;
+   top: 620px;
    text-shadow: rgba(0, 0, 0, 0.478) 1px 2.5px 10px;
-   z-index: 1;
 }
 
 .c1 {
-   transform: translate(20vw, 60vh) rotate(30deg) scale(1.2);
-   animation: 90s linear infinite alternate-reverse slide;
+   font-size: 8rem;
+   top: 650px;
 }
 
 .c2 {
-   transform: translate(-5vw, 65vh) rotate(30deg) scale(1.2);
-   animation: 80s linear infinite alternate slidein;
+   font-size: 12rem;
+   top: 570px;
 }
 
 .c3 {
-   transform: translate(63vw, 63vh) scale(0.7) rotate(-5deg);
-   animation: 120s linear infinite alternate slidein;
+   font-size: 20rem;
+   top: 550px;
 }
 
 .c4 {
-   transform: translate(80vw, 59vh) scaleX(-1);
-   animation: 80s linear infinite alternate-reverse slide;
+   font-size: 12rem;
+   top: 600px;
 }
 
 .c5 {
-   transform: translate(8vw, 64vh) scale(0.7);
-   animation: 100s linear infinite alternate slide;
+   font-size: 16rem;
+   top: 550px;
 }
 
-@keyframes slidein {
-   0%, 100% {
-     left: 0;
-   }
-
-   25%{
-      left: 50%;
-   }
- 
-   50% {
-    left: 100%;
-   }
-
-   75%{
-      left: -50%;
-   }
-
- }
-
- @keyframes slide {
-   0%, 100% {
-     right: 0;
-   }
-
-   25%{
-      right: 50%;
-   }
- 
-   50% {
-    right: 100%;
-   }
-
-   75%{
-      right: -50%;
-   }
-
- }
  
