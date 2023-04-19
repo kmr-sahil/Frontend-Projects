@@ -1,1 +1,1 @@
-
+This is a Weather Web App where user input a city and they get know all the climate details regarding there city.
