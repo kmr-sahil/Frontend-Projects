@@ -1,1 +1,3 @@
 This is a Weather Web App where user input a city and they get know all the climate details regarding there city.
+
+I have used concepts of JavaScript like Promises here to fetch the API details and show the result
