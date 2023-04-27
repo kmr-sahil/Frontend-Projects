@@ -1,1 +1,4 @@
+This is a Web App where you get dog images everytime you hit the "get new dog" Button
 
+Here the images are getting through the API that i fetched in this javascript file
+Also I made some animations in the background that I learnt recently and the change in theme button to that totaly changes the entire color of the page when it get click.

@@ -14,6 +14,11 @@
     overflow: hidden;
  }
 
+ .body {
+   width: 100%;
+    height: 100%;
+ }
+
  :root {
     --primary-color: #7286D3;
     --secondary-color: #8EA7E9;
@@ -124,6 +129,7 @@ button:active {
 }
 
 a{
+   z-index: 2;
     text-decoration: none;
     text-shadow: rgba(0, 0, 0, 0.478) 1px 2.5px 10px;
     color: var(--text-color);
@@ -134,75 +140,39 @@ a:hover {
    font-size: 1.1rem;
 }
 
-.cloud {
+/*.cloud {
    position: absolute;
-   font-size: 20rem;
    color: var(--text-color);
-   transform: translateY(60vh);
+   font-size: 3rem;
+   font-size: 6rem;
    text-shadow: rgba(0, 0, 0, 0.478) 1px 2.5px 10px;
-   z-index: 1;
+   z-index: 0;
 }
 
 .c1 {
-   transform: translate(20vw, 60vh) rotate(30deg) scale(1.2);
-   animation: 90s linear infinite alternate-reverse slide;
+   font-size: 8rem;
+   color: bisque;
+   margin-bottom: 30%;
 }
 
 .c2 {
-   transform: translate(-5vw, 65vh) rotate(30deg) scale(1.2);
-   animation: 80s linear infinite alternate slidein;
+   font-size: 12rem;
+   margin-bottom: 6%;
 }
 
 .c3 {
-   transform: translate(63vw, 63vh) scale(0.7) rotate(-5deg);
-   animation: 120s linear infinite alternate slidein;
+   font-size: 20rem;
+   margin-bottom: 2%;
 }
 
 .c4 {
-   transform: translate(80vw, 59vh) scaleX(-1);
-   animation: 80s linear infinite alternate-reverse slide;
+   font-size: 12rem;
+   margin-bottom: 8%;
 }
 
 .c5 {
-   transform: translate(8vw, 64vh) scale(0.7);
-   animation: 100s linear infinite alternate slide;
+   font-size: 16rem;
+   margin-bottom: 3%;
 }
-
-@keyframes slidein {
-   0%, 100% {
-     left: 0;
-   }
-
-   25%{
-      left: 50%;
-   }
- 
-   50% {
-    left: 100%;
-   }
-
-   75%{
-      left: -50%;
-   }
-
- }
-
- @keyframes slide {
-   0%, 100% {
-     right: 0;
-   }
-
-   25%{
-      right: 50%;
-   }
- 
-   50% {
-    right: 100%;
-   }
-
-   75%{
-      right: -50%;
-   }
-
- }
+*/
  

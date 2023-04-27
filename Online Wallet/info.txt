@@ -1,0 +1,4 @@
+This is a basic webapp where user can deposit, withdraw and check balance of their account
+
+I made this with javascript concepts like classes, constructor, objects and eventlistner 
+Used CSS to make it look more interactive 
