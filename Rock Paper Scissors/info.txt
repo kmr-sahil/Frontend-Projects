@@ -1,4 +1,0 @@
-
-This is a Rock Paper Scissor webapp/webgame where user competes against computer to win
-
-In this project I have used HTML, CSS, and JavaScript
