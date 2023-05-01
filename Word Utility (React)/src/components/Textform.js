@@ -3,11 +3,9 @@ import React, { useState } from 'react'
 export default function Textform(props) {
 
     const handleCopy= () => {
-        navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
-         if (result.state == "granted" || result.state == "prompt") {
-         alert("Write access granted!");
-            }
-          });
+        navigator.clipboard.writeText(text)
+        document.getSelection().removeAllRanges();
+        props.showAlert("Copied to clipboard", "success")
     }
 
     const handleUpclick = () => {
