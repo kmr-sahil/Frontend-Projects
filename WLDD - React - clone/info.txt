@@ -1,1 +1,3 @@
 
+This project is a clone of website WLDD-Meme Marketing Company
+THe project used React JS, React Hooks and React Router DOM
