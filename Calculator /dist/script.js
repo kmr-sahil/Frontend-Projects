@@ -14,24 +14,43 @@ Array.from(numbers).forEach((button) => {
         }
         else if(e.target.innerText === '='){
             console.log(cal)
-            screen.innerText = eval(cal)
-            cal = screen.innerText
-            display = screen.innerText
+            cal = eval(cal)
+            display = cal
+            if(display > 999999999){
+                display = display.slice(0,-9) + 'e';
+            }
+            screen.innerHTML = display
         }
         else{
             cal = cal + (e.target.className === 'btn-primary'? e.target.innerText : e.target.value)
         
             if (e.target.className === 'btn-primary' && operator !== '' ){
                 display = e.target.innerText
-                screen.innerHTML = display
+                
                 operator = ''
+                if(display > 999999999){
+                    display = display.toLowerCase().slice(0,-9) + 'e';
+                }
+                screen.innerHTML = display
                 console.log("no")
             }
 
             else if(e.target.className === 'btn-primary' || e.target.innerText === '0'){
                 display +=  e.target.innerText
+                
+                if(display > 999999999){
+                    display = display.slice(0,-9) + 'e';
+                }
                 screen.innerHTML = display
                 console.log("pri")
+            }
+
+            else if (e.target.className === 'btn-secondary' && operator !== '' ){
+                cal = cal.slice(0, -2)
+                console.log(cal)
+                cal = cal + e.target.value
+                console.log("ab")
+                
             }
             
             else {
@@ -40,7 +59,8 @@ Array.from(numbers).forEach((button) => {
                 console.log("op")
             }
             console.log(display)
-            console.log(cal)
+            
         }
     })
 })
+
