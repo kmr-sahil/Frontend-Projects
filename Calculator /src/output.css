@@ -4,9 +4,10 @@
 
 @layer components {
     .btn-primary {
-      @apply bg-slate-200 w-[23%] pt-2 pb-2 pr-4 pl-4 rounded-full text-3xl font-semibold;
+      @apply bg-slate-200 w-[23%] px-2 py-3 md:px-4 md:py-5 rounded-full text-3xl font-semibold shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 ease-in-out duration-150 active:scale-90;
     }
     .btn-secondary {
-        @apply bg-orange-600 w-[23%] pt-2 pb-2 pr-4 pl-4 rounded-full text-3xl font-semibold;
+        @apply bg-orange-600 w-[23%] px-2 py-3 md:px-4 md:py-5 rounded-full text-3xl font-semibold shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 ease-in-out duration-150 active:scale-90 focus:bg-orange-200;
       }
   }
+
