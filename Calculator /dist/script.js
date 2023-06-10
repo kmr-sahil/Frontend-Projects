@@ -14,7 +14,8 @@ Array.from(numbers).forEach((button) => {
         }
         else if(e.target.innerText === '='){
             console.log(cal)
-            cal = eval(cal)
+            cal = (eval(cal)).toFixed(2)
+            console.log(`main - ${cal}`)
             display = cal
             if(display > 999999999){
                 display = display.slice(0,-9) + 'e';
