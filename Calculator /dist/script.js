@@ -65,3 +65,20 @@ Array.from(numbers).forEach((button) => {
     })
 })
 
+
+let infoLogo = document.getElementById('info-logo')
+let infoExpand = document.getElementById('info-expand')
+let c = 0
+
+infoLogo.onclick = () => {
+    if(c === 0){
+        c = 1
+        infoExpand.style.display = 'block'
+        infoLogo.innerHTML = `<i class="fa-solid fa-circle-xmark"></i>`
+    }
+    else {
+        c = 0
+        infoExpand.style.display = 'none'
+        infoLogo.innerHTML = `<i class="fa-solid fa-circle-info"></i>`
+    }
+}
