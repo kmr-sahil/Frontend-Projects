@@ -7,8 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body class="bg-slate-900 w-screen h-screen m-auto flex align-middle">
-    <div class="flex flex-col w-[80%] sm:w-[55%] md:w-[50%] lg:w-[35%] xl:w-[30%] 2xl:w-[25%] justify-center bg-slate-700 m-auto p-6 rounded-2xl gap-5 shadow-[inset_1px_-3px_4px_rgba(0,0,0,0.8)]  " >
+<body class="bg-slate-900 w-screen h-screen m-auto flex flex-col justify-center align-middle">
+    <script src="https://kit.fontawesome.com/3a51dbefd2.js" crossorigin="anonymous"></script>
+
+    <div class="absolute text-2xl text-orange-400 right-10 top-7 md:right-14 flex flex-row-reverse gap-2">
+        <span id="info-logo"><i class=" fa-solid fa-circle-info"></i></span>
+        <div id="info-expand" class="bg-orange-400 hidden text-slate-50 rounded-lg p-5 text-xs md:text-sm lg:text-base w-[200px] shadow-[rgba(0,_0,_0,_0.5)_0px_3px_8px]">
+            <div>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, atque?</div>
+            <div>2. Lorem ipsum dolor sit amet consectetur, adipisicing dfgrg elit. Distinctio, blanditiis.</div>
+            <div>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, asperiores non nemo nisi accusantium quis.</div>
+        </div>
+    </div>
+
+    <div class="flex flex-col w-[80%] sm:w-[55%] md:w-[50%] lg:w-[35%] xl:w-[30%] 2xl:w-[25%] justify-center self-center bg-slate-700 m-5 p-6 rounded-2xl gap-5 shadow-[inset_1px_-3px_4px_rgba(0,0,0,0.8)]  " >
         <div class="text-end bg-slate-300 rounded-full pt-6 pb-2 px-6 text-4xl shadow-[rgba(0,_0,_0,_0.5)_0px_3px_8px]">
             <div id="output">0</div>
         </div>
@@ -41,6 +52,11 @@
             <button class="btn-primary">.</button>
             <button class="btn-secondary">=</button>
         </div>
+    </div>
+    <div class="self-center opacity-80 hover:opacity-100 hover:scale-105 duration-200">
+        <p class="text-amber-500 font-semibold">created by 
+            <a href="">@me</a>
+        </p>
     </div>
     <script src="script.js"></script>
 </body>
